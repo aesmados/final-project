@@ -1,0 +1,139 @@
+
+nav {
+  display: flex !important;
+  transition: all .3s ease-out;  
+}
+nav a {
+  color: #10083f;
+  line-height: 22px;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 40px;
+  font-weight: 700;
+}
+.logo {
+  position: relative;
+}
+@media (max-width: 576px) {
+  .logo img {
+    position: absolute;
+    z-index: 99;
+    top: -24px;
+    left: 20px;
+  }
+  .burger {
+    height: 36px;
+    width: 36px;
+    border-radius: 12px;
+    position: absolute;
+    right: 20px;
+    top: 28px;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+  }
+  .burger span {
+    display: block;
+    background: #10083F;
+    height: 2px;
+    width: 20px;
+    transition: all .3s ease-in-out;
+  }
+  .burger.active + nav {
+    transform: translateX(0);
+  }
+  .burger span:nth-child(2) {
+    margin: 4px 0;
+  }
+  .burger.active span:nth-child(2){
+    display: none;
+  }
+  .burger.active span:first-child {
+    transform: rotate(45deg);
+  }
+  .burger.active span:last-child {
+    transform: rotate(-45deg);
+    position: absolute;
+  }
+  .burger.active {
+    background: #F1F1F4;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+  }
+  .hide {
+    display: none;
+  }
+  nav a {
+    text-align: center;
+    display: block;
+    height: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 36px;
+    margin-left: 0;
+  }
+  .benefits-row {
+    flex-wrap: wrap;    
+  }
+  .benefit-item,
+  .benefit-item:hover {
+    width: 100% !important;    
+  }
+  .benefit-item p {
+    opacity: 1 !important;
+  }
+  .banner-image {
+    margin-top: 40px;
+  }
+  .text,
+  .text-lg {
+    text-align: center;
+  }
+  h1, h2 {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .btn-ready,
+  .btn-join {
+    margin: auto;
+  }
+  .m-lg {
+    margin: 64px 0 24px;
+  }
+  .benefit-item {
+    padding: 40px 26px !important;
+    height: auto !important;
+    margin-bottom: 24px !important;
+  }
+  .benefit-item p {
+    display: block !important;
+  }
+  .attend-item {
+    padding-right: 0 !important;
+    margin-bottom: 40px !important;
+    text-align: center !important;
+  }
+  .attend-item .num {
+    margin: auto;
+  }
+  .row-reverse {
+    flex-direction: column-reverse;
+  }
+  .row-reverse .image {
+    margin-top: 40px;
+  }
+}
