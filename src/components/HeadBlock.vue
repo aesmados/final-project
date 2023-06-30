@@ -73,6 +73,11 @@ export default {
   font-size: 18px;
   text-decoration: none;
   color: #10083f;
+  transition: all 0.3s ease-out;
+  &:hover {
+    color: #ffe14d;
+    background: #000;
+  }
 }
 .banner {
   margin-top: 3em;

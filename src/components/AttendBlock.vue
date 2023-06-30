@@ -18,7 +18,7 @@
 import { mapGetters } from "vuex";
 export default {
   computed: {
-    ...mapGetters(["attends"]),
+    ...mapGetters("Attends", ["attends"]),
   },
 };
 </script>

@@ -21,7 +21,7 @@ export default {
     return {};
   },
   computed: {
-    ...mapGetters(["benefits"]),
+    ...mapGetters("Benefits", ["benefits"]),
   },
 };
 </script>
@@ -30,7 +30,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 -14px;
+  gap: 28px;
 }
 .benefit-item {
   transition: all 0.3s ease-in;
@@ -44,7 +44,6 @@ export default {
   height: 440px;
   width: 33.33%;
   cursor: pointer;
-  margin: 0 14px;
   h5 {
     color: #000;
     text-align: center;

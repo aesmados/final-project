@@ -14,11 +14,11 @@
 import { mapGetters, mapMutations } from "vuex";
 export default {
   computed: {
-    ...mapGetters(["links"]),
-    ...mapGetters(["isActive"]),
+    ...mapGetters("Nav", ["links"]),
+    ...mapGetters("Nav", ["isActive"]),
   },
   methods: {
-    ...mapMutations(["toggleActive"]),
+    ...mapMutations("Nav", ["toggleActive"]),
   },
 };
 </script>

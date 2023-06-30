@@ -14,7 +14,7 @@ nav a {
 .logo {
   position: relative;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .logo img {
     position: absolute;
     z-index: 99;
@@ -85,6 +85,18 @@ nav a {
     margin-bottom: 36px;
     margin-left: 0;
   }
+  .benefit-item {
+    padding: 40px 15px !important;
+  }
+  .attend-item {
+    padding-right: 0 !important;
+    margin-bottom: 30px !important;
+  }
+  .row-reverse {
+    align-items: center;
+  }
+}
+@media (max-width: 576px) {  
   .benefits-row {
     flex-wrap: wrap;    
   }

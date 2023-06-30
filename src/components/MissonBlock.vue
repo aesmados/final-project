@@ -38,6 +38,11 @@
   font-size: 18px;
   text-decoration: none;
   color: #10083f;
+  transition: all 0.3s ease-out;
+  &:hover {
+    color: #ffe14d;
+    background: #000;
+  }
 }
 #simple-content4 {
   margin-bottom: 100px;
