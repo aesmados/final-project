@@ -15,33 +15,13 @@
   </div>
 </template>
 <script>
+import { mapGetters } from "vuex";
 export default {
   data() {
-    return {
-      benefits: [
-        {
-          id: 1,
-          image: "/assets/img1.svg",
-          title: "Будь первым",
-          description:
-            "Ты первым увидишь наши новые продукты и поучаствуешь в их разработке",
-        },
-        {
-          id: 2,
-          image: "/assets/img2.svg",
-          title: "Поделись опытом",
-          description:
-            "Будем рады узнать о твоем опыте использования наших продуктов",
-        },
-        {
-          id: 3,
-          image: "/assets/img3.svg",
-          title: "Получи уникальную ачивку",
-          description:
-            "Блестящая, свеженькая и такая уникальная ачивка в приложении “Мой Билайн”",
-        },
-      ],
-    };
+    return {};
+  },
+  computed: {
+    ...mapGetters(["benefits"]),
   },
 };
 </script>
@@ -76,6 +56,7 @@ export default {
   p {
     color: #78735e;
     text-align: center;
+    max-width: 291px;
     font-size: 18px;
     line-height: 24px;
     transition: all 0.3s ease;
@@ -93,9 +74,11 @@ export default {
 }
 .benefit-item:last-child {
   background: #000;
-  h5,
-  p {
+  h5 {
     color: #fff;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.8);
   }
 }
 </style>

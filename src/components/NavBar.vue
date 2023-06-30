@@ -11,22 +11,14 @@
   </nav>
 </template>
 <script>
+import { mapGetters, mapMutations } from "vuex";
 export default {
-  data() {
-    return {
-      isActive: false,
-      links: [
-        { link: "#simple-content2", text: "Какие плюсы?" },
-        { link: "#simple-content3", text: "Что потребуется от тебя" },
-        { link: "#simple-content4", text: "Наша миссия" },
-        { link: "#simple-content4", text: "Присоединиться" },
-      ],
-    };
+  computed: {
+    ...mapGetters(["links"]),
+    ...mapGetters(["isActive"]),
   },
   methods: {
-    toggleActive() {
-      this.isActive = !this.isActive;
-    },
+    ...mapMutations(["toggleActive"]),
   },
 };
 </script>
